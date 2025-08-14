@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "prisma": {
     "seed": "tsx prisma/seed.ts"
   },
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "npx prisma db seed"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +17,9 @@
     "@prisma/client": "^6.13.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "npx": "^10.2.2",
+    "tsx": "^4.20.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -29,4 +30,3 @@
     "typescript": "^5.9.2"
   }
 }
-
